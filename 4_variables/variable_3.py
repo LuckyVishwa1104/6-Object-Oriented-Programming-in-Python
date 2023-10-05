@@ -27,7 +27,7 @@ obj1=Car("Ferrari","F8 spider") # if we create a new object with same name, prev
 
 # changing the instance variable of obj2
 obj2.brand="Ford"
-obj2.modle="Mustang"
+obj2.modle="Mustang GT"
 
 print(Car.__dict__)
 print(obj1.__dict__)
@@ -48,6 +48,5 @@ print(obj2.wheel)
 Car.wheel=6
 print(Car.wheel)
 print(Car.__dict__)
-print(obj1.wheel)
-print(obj2.wheel)  # first preference will be given to local namespace, it any variable is present in local namespace it get printed, it not then it will search in global or class namespce
-# that why here 6 is displayed as it is present in, local namespace.
+print(obj1.wheel) # first preference will be given to local namespace, it any variable is present in local namespace it get printed, it not then it will search in global or class namespce
+print(obj2.wheel)  # that why here 6 is displayed as no such variable was present in local namespace.

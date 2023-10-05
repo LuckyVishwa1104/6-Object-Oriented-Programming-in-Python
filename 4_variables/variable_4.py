@@ -19,6 +19,7 @@ class Employee:
     def add(self):
         print(str(self.aa)+str(self.bb)+str(self.cc))
 
+    @classmethod
     def display(cls):
         print(cls.a)
         print(cls.b)
@@ -43,3 +44,4 @@ print(obj1.__dict__)
 
 print(obj1.a)
 print(obj1.b)
+print(obj1.__dict__)
