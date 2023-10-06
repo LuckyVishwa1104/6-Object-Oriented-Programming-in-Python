@@ -36,6 +36,9 @@ class Employee:
 obj1=Employee(101,38000)
 obj2=Employee(204,42000)
 
+obj1.show()
+obj2.show()
+
 # accesing the employee id using getter instance method
 print(obj1.get_id())
 print(obj1.get_salary())

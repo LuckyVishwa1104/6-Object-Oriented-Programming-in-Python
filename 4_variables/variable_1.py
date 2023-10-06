@@ -3,7 +3,8 @@
 these variable are the variable defined in the body of class, these variables are shared by all the object of the class.
 it can be changed by only the class, each object can access these variables. '''
 '''2) Instance variable:
-these are the variable defined in particular methods, they belong to that method only, no object can access the instance variables of other object'''
+these are the variable defined in particular methods, they belong to that method only, 
+no object can access the instance variables of other object'''
 
 # example 1
 # class named as exapmle
