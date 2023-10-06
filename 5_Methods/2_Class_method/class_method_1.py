@@ -1,6 +1,8 @@
-"""Class Method - class method are used to manipulate class variables.
+"""Class Method - class method are used to manipulate class variables i.e. to access or update class variable.
 A class method can be called by both object ae well class, there is no complusion to create a object for execution of class method.
-Class methods are created by using special decorator(@classmethod) and instead of self parameter they have cls parameter as reference fo rcurrent entity."""
+Class methods are created by using special decorator(@classmethod) and instead of self parameter they have cls parameter as reference 
+of current entity."""
+# we can't access instance variable using class method
 
 # Syntax
 '''
@@ -36,17 +38,12 @@ class Employee:
     @classmethod
     def cls_mtd2(cls):
         return cls.Id
-    
-    # method to display instance variables
-    # @classmethod
-    # def cls_mtd3(cls):
-    #     return cls.aa
-    @classmethod
-    def cls_mtd4(cls):
-        print(cls.book)
 
 # acessing the methods using class name i.e. without creating a object
 Employee.cls_mtd1()  # 500
 print(Employee.cls_mtd2()) # 2355
-# print(Employee.cls_mtd3()) # 1000
-Employee.cls_mtd4() # Death of a Salesman
+
+# accesing using object
+obj1=Employee()
+obj1.cls_mtd1()
+print(obj1.cls_mtd2())
