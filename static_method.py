@@ -33,12 +33,8 @@ class Student:
 
 # it doesn't require any refernce argument for execution
 Student.info()
-print(Student.info1(23,10,20))
+print(Student.info1(23,10))
 
 # static methods can be accessed by object and class name as well
 obj1=Student()
-print(obj1.info1(45,100,200))
-
-
-
-
+print(obj1.info1(45,100))
