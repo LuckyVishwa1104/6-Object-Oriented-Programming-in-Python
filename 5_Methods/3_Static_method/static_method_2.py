@@ -17,6 +17,7 @@ class Employee:
     def static_method1():
         print(Employee.department)
 
+# static method can't access the class or instance varaible, hence it cant modify state of object or class
     # static methos for dispalying instance variables
     @ staticmethod
     def static_method2():
